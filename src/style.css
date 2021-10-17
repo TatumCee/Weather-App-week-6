@@ -1,0 +1,160 @@
+body {
+  color: hsl(210, 11%, 40%);
+  background-image: url(https://resources.weatherzone.com.au/images/widgets/wz5/background-very-cloudy.jpg);
+  background-repeat: no-repeat;
+  background-size: 1950px 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+ul {
+  padding: 0;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+hr {
+  margin-bottom: 20px;
+  opacity: 3.5;
+  color: hsl(210, 11%, 40%);
+}
+
+span {
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: bolder;
+  color: rgb(245, 84, 35);
+  text-shadow: black;
+}
+div {
+  display: block;
+}
+
+.selectCity {
+  width: auto;
+}
+.container {
+  max-width: 950px;
+  font-family: "Josefin Sans", sans-serif;
+  border-radius: 30px;
+  border: 3px solid hsl(210, 11%, 40%);
+  background: #c4d4db;
+  margin: 100px;
+}
+
+.columnOne {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.columnTwo {
+  margin-top: 30px;
+}
+
+.picToday {
+  margin-top: 40px;
+  width: 170px;
+  background: whitesmoke;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px #cdc9d3;
+}
+.background {
+  width: 100%;
+  image-resolution: inherit;
+}
+
+.enterCityValue {
+  max-width: fit-content;
+  border-radius: 5px;
+}
+
+.searchButton {
+  margin-left: 0.5px;
+  border-radius: 15px;
+}
+
+.tempButtons {
+  margin-left: 55px;
+}
+
+.highLow {
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.weatherDetails {
+  padding: 0;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.weekForecast {
+  margin-left: 0;
+  text-align: center;
+}
+
+.tempForecast {
+  display: block;
+  margin: 0 auto;
+  margin-right: 0;
+  font-weight: bolder;
+}
+.picForecast {
+  background: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px #cdc9d3;
+}
+
+.cities {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.otherCities {
+  display: inline;
+}
+
+.celciusButton {
+  padding: 5px;
+  display: inline;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.fahrenheitButton {
+  display: inline;
+  padding: 5px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+#todays-desc {
+  font-size: 25px;
+  text-decoration: underline;
+}
+#city-temp {
+  font-size: 80px;
+  font-weight: 900;
+  display: block;
+}
+
+#btn-current {
+  border-radius: 5px;
+}
+
+#btn-search {
+  border-radius: 5px;
+}

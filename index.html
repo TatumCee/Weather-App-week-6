@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SheCodes Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Sans+Caption:wght@400;700&family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col columnOne">
+          <h1 id="search-city">Melbourne, AU</h1>
+          <div id="todays-desc">Partly Cloudy</div>
+          <img
+            class="picToday"
+            src="images/picpartlycloudy.png"
+            alt="Partly Cloudy"
+          />
+          <div id="city-temp">20°C</div>
+        </div>
+        <div class="col columnTwo">
+          <form class="selectForm" id="city-input">
+            <div class="mb-3 selectCity">
+              <input
+                type="search"
+                placeholder="Enter a city"
+                class="enterCityValue"
+                id="city-entry-value"
+              />
+              <input type="submit" value="Search" id="btn-search" />
+              <button type="submit" id="btn-current">My Location</button>
+              <br />
+              <p class="dateAndTime" id="day-time">
+                <strong>Sunday, March 3rd 2021</strong>
+              </p>
+              <div class="highLow">
+                <div><em>High: 23°C</em></div>
+                <div><em>Low: 11°C</em></div>
+              </div>
+              <div class="col weatherDetails">
+                <br />
+                <ul>
+                  <li id="rain-chance">Chance of Rain: 19%</li>
+                  <li id="humid-percent">Humidity: 30%</li>
+                  <li id="wind-speed">Wind Speed: 23 kph</li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr />
+      <div class="row weekForecast">
+        <div class="col-2">
+          Monday
+          <div>
+            <img
+              class="picForecast"
+              src="images/picpartlycloudy.png"
+              width="50px"
+              alt="Partly Cloudy"
+            />
+            <div class="tempForecast">22°C</div>
+          </div>
+        </div>
+        <div class="col-2">
+          Tuesday
+          <div>
+            <img
+              class="picForecast"
+              src="images/piccloudy.png"
+              width="50px"
+              alt="Partly Cloudy"
+            />
+            <div class="tempForecast">19°C</div>
+          </div>
+        </div>
+        <div class="col-2">
+          Wednesday
+          <div>
+            <img
+              class="picForecast"
+              src="images/picrain.png"
+              width="50px"
+              alt="Partly Cloudy"
+            />
+            <div class="tempForecast">16°C</div>
+          </div>
+        </div>
+        <div class="col-2">
+          Thursday
+          <div>
+            <img
+              class="picForecast"
+              src="images/picstormy.png"
+              width="50px"
+              alt="Partly Cloudy"
+            />
+            <div class="tempForecast">23°C</div>
+          </div>
+        </div>
+        <div class="col-2">
+          Friday
+          <div>
+            <img
+              class="picForecast"
+              src="images/picsunny.png"
+              width="50px"
+              alt="Partly Cloudy"
+            />
+            <div class="tempForecast">25°C</div>
+          </div>
+        </div>
+        <div class="col-2">
+          Saturday
+          <div>
+            <img
+              class="picForecast"
+              src="images/picpartlycloudy.png"
+              width="50px"
+              alt="Partly Cloudy"
+            />
+            <div class="tempForecast">21°C</div>
+          </div>
+        </div>
+        <br />
+        <ul class="cities">
+          <li class="otherCities">
+            <a
+              href="https://www.weatherzone.com.au/nsw/sydney/sydney"
+              target="_blank"
+            >
+              SYDNEY
+            </a>
+          </li>
+          <li class="otherCities">
+            <a
+              href="https://www.weatherzone.com.au/qld/brisbane/brisbane"
+              target="_blank"
+            >
+              BRISBANE
+            </a>
+          </li>
+          <li class="otherCities">
+            <a
+              href="https://www.weatherzone.com.au/act/act/canberra"
+              target="_blank"
+            >
+              CANBERRA
+            </a>
+          </li>
+          <li class="otherCities">
+            <a
+              href="https://www.weatherzone.com.au/wa/perth/perth"
+              target="_blank"
+            >
+              PERTH
+            </a>
+          </li>
+          <li class="otherCities">
+            <a
+              href="https://www.weatherzone.com.au/nt/darwin-daly/darwin"
+              target="_blank"
+            >
+              DARWIN
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
