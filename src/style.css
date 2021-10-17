@@ -46,11 +46,16 @@ div {
   width: auto;
 }
 .container {
-  max-width: 950px;
+  max-width: 820px;
   font-family: "Josefin Sans", sans-serif;
   border-radius: 30px;
   border: 3px solid hsl(210, 11%, 40%);
-  background: #c4d4db;
+  background: radial-gradient(
+    650px at 50.6% -15%,
+    rgba(226, 230, 175, 0.31) 65%,
+    rgb(172, 213, 231) 100.2%
+  );
+
   margin: 100px;
 }
 
