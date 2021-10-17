@@ -42,6 +42,12 @@ div {
   display: block;
 }
 
+footer {
+  display: block;
+  bottom: 0;
+  position: absolute;
+}
+
 .selectCity {
   width: auto;
 }
@@ -144,6 +150,11 @@ div {
   padding: 5px;
   border-radius: 15px;
   font-size: 20px;
+}
+
+.codedBy {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
 }
 
 #todays-desc {
